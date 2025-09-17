@@ -1,0 +1,265 @@
+{
+  "cards": [
+    {
+      "id": "forest_spine_frog",
+      "name": "Grenouille Épineuse",
+      "biome": "FORET",
+      "rarity": "C",
+      "cost": 1,
+      "atk": 1,
+      "dur": 3,
+      "spd": 2,
+      "keywords": [
+        "TIRAILLEUR"
+      ],
+      "keyword_values": {},
+      "triggers": [],
+      "notes": "Punition d’invocations."
+    },
+    {
+      "id": "forest_azure_spider",
+      "name": "Mygale d’Azur",
+      "biome": "FORET",
+      "rarity": "C",
+      "cost": 1,
+      "atk": 1,
+      "dur": 4,
+      "spd": 1,
+      "keywords": [],
+      "keyword_values": {},
+      "triggers": [
+        {
+          "event": "on_attack",
+          "apply": "VENIN",
+          "value": 1,
+          "target": "ENEMY"
+        }
+      ],
+      "notes": "Attrition lente (Venin à l’attaque)."
+    },
+    {
+      "id": "forest_mantis",
+      "name": "Mante Prédatrice",
+      "biome": "FORET",
+      "rarity": "U",
+      "cost": 2,
+      "atk": 3,
+      "dur": 3,
+      "spd": 2,
+      "keywords": [
+        "PERCEE"
+      ],
+      "keyword_values": {},
+      "triggers": [],
+      "notes": "Contourne boucliers."
+    },
+    {
+      "id": "dunes_ember_scorpion",
+      "name": "Scorpion des Braises",
+      "biome": "DUNES",
+      "rarity": "C",
+      "cost": 1,
+      "atk": 1,
+      "dur": 3,
+      "spd": 2,
+      "keywords": [],
+      "keyword_values": {},
+      "triggers": [
+        {
+          "event": "on_attack",
+          "apply": "BRULURE",
+          "value": 1,
+          "target": "ENEMY"
+        }
+      ],
+      "notes": "Attrition feu."
+    },
+    {
+      "id": "dunes_coulevre_mirage",
+      "name": "Couleuvre Mirage",
+      "biome": "DUNES",
+      "rarity": "U",
+      "cost": 1,
+      "atk": 2,
+      "dur": 2,
+      "spd": 3,
+      "keywords": [
+        "BOND"
+      ],
+      "keyword_values": {},
+      "triggers": [],
+      "notes": "Bond ; +1 ATQ si cible protégée (à raffiner)."
+    },
+    {
+      "id": "cliffs_echo_bat",
+      "name": "Chauve-Souris Écho",
+      "biome": "FALAISES",
+      "rarity": "C",
+      "cost": 1,
+      "atk": 2,
+      "dur": 2,
+      "spd": 3,
+      "keywords": [
+        "ETHERE"
+      ],
+      "keyword_values": {},
+      "triggers": [],
+      "notes": "Éthéré (placeholder)."
+    },
+    {
+      "id": "river_mud_turtle",
+      "name": "Tortue de Vase",
+      "biome": "FLEUVE",
+      "rarity": "C",
+      "cost": 1,
+      "atk": 1,
+      "dur": 5,
+      "spd": 1,
+      "keywords": [
+        "CARAPACE"
+      ],
+      "keyword_values": {
+        "CARAPACE": 1
+      },
+      "triggers": [],
+      "notes": "Mur vivant (Carapace)."
+    },
+    {
+      "id": "river_lamprey",
+      "name": "Lamproie",
+      "biome": "FLEUVE",
+      "rarity": "C",
+      "cost": 1,
+      "atk": 1,
+      "dur": 4,
+      "spd": 1,
+      "keywords": [],
+      "keyword_values": {},
+      "triggers": [
+        {
+          "event": "on_attack",
+          "apply": "SAIGNEMENT",
+          "value": 1,
+          "target": "ENEMY"
+        }
+      ],
+      "notes": "Inflige SAIGNEMENT sur attaque."
+    },
+    {
+      "id": "ruins_crypt_rat",
+      "name": "Rat des Cryptes",
+      "biome": "RUINES",
+      "rarity": "C",
+      "cost": 1,
+      "atk": 2,
+      "dur": 2,
+      "spd": 2,
+      "keywords": [
+        "TIRAILLEUR"
+      ],
+      "keyword_values": {},
+      "triggers": [],
+      "notes": "Flex."
+    },
+    {
+      "id": "ruins_curse_gargoyle",
+      "name": "Gargouille Fissurée",
+      "biome": "RUINES",
+      "rarity": "C",
+      "cost": 1,
+      "atk": 1,
+      "dur": 4,
+      "spd": 1,
+      "keywords": [],
+      "keyword_values": {},
+      "triggers": [
+        {
+          "event": "on_attack",
+          "apply": "MALEDICTION",
+          "value": 1,
+          "target": "ENEMY"
+        }
+      ],
+      "notes": "Frein (Malédiction)."
+    },
+    {
+      "id": "neutral_sparrow",
+      "name": "Moineau Hargneux",
+      "biome": "NEUTRE",
+      "rarity": "C",
+      "cost": 0,
+      "atk": 1,
+      "dur": 1,
+      "spd": 3,
+      "keywords": [
+        "TIRAILLEUR",
+        "VOL"
+      ],
+      "keyword_values": {},
+      "triggers": [],
+      "notes": "Filler agressif."
+    },
+    {
+      "id": "neutral_rat",
+      "name": "Rat Éclaireur",
+      "biome": "NEUTRE",
+      "rarity": "C",
+      "cost": 0,
+      "atk": 1,
+      "dur": 2,
+      "spd": 3,
+      "keywords": [],
+      "keyword_values": {},
+      "triggers": [],
+      "notes": "Tempo."
+    },
+    {
+      "id": "neutral_dog",
+      "name": "Chien Errant",
+      "biome": "NEUTRE",
+      "rarity": "C",
+      "cost": 1,
+      "atk": 2,
+      "dur": 2,
+      "spd": 2,
+      "keywords": [
+        "BOND"
+      ],
+      "keyword_values": {},
+      "triggers": [],
+      "notes": "Presse la faiblesse."
+    },
+    {
+      "id": "neutral_crab",
+      "name": "Crabe de Rivage",
+      "biome": "NEUTRE",
+      "rarity": "C",
+      "cost": 1,
+      "atk": 1,
+      "dur": 3,
+      "spd": 1,
+      "keywords": [
+        "CARAPACE"
+      ],
+      "keyword_values": {
+        "CARAPACE": 1
+      },
+      "triggers": [],
+      "notes": "Mur low-cost."
+    },
+    {
+      "id": "neutral_jeune",
+      "name": "Jeune Naissant",
+      "biome": "NEUTRE",
+      "rarity": "C",
+      "cost": 0,
+      "atk": 1,
+      "dur": 1,
+      "spd": 2,
+      "keywords": [],
+      "keyword_values": {},
+      "triggers": [],
+      "notes": "Éclosion d'œuf générique."
+    }
+  ]
+}
