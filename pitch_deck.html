@@ -1,0 +1,429 @@
+# ====================================================================
+# PITCH DECK COMMERCIAL - BESTIAIRE
+# ====================================================================
+
+PITCH_DECK = """
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bestiaire - Pitch Deck Commercial</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        .slide {
+            min-height: 100vh;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .slide:nth-child(even) {
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 4em;
+            margin-bottom: 20px;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+            background: linear-gradient(45deg, #FFD700, #FFA500);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            color: #FFD700;
+        }
+
+        h3 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: #87CEEB;
+        }
+
+        .tagline {
+            font-size: 1.5em;
+            font-style: italic;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .stat-number {
+            font-size: 3em;
+            font-weight: bold;
+            color: #FFD700;
+        }
+
+        .stat-label {
+            margin-top: 10px;
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .feature-list {
+            list-style: none;
+            font-size: 1.3em;
+            line-height: 2;
+        }
+
+        .feature-list li:before {
+            content: "⚔️ ";
+            margin-right: 10px;
+        }
+
+        .highlight {
+            background: linear-gradient(45deg, #FF6B6B, #FF8787);
+            padding: 5px 15px;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 5px;
+        }
+
+        .cta {
+            background: linear-gradient(45deg, #FFD700, #FFA500);
+            color: #000;
+            padding: 20px 50px;
+            font-size: 1.5em;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 40px;
+            transition: transform 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .cta:hover {
+            transform: scale(1.1);
+        }
+
+        .comparison-table {
+            width: 100%;
+            max-width: 800px;
+            margin: 30px 0;
+            border-collapse: collapse;
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+        .comparison-table th {
+            background: rgba(255,215,0,0.3);
+            font-size: 1.3em;
+        }
+
+        .comparison-table td {
+            background: rgba(255,255,255,0.1);
+        }
+
+        .roadmap {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            max-width: 1000px;
+            margin: 40px 0;
+        }
+
+        .roadmap-item {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+            background: rgba(255,255,255,0.1);
+            margin: 0 10px;
+            border-radius: 10px;
+        }
+
+        .roadmap-item h4 {
+            color: #FFD700;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+    </style>
+</head>
+<body>
+
+<!-- SLIDE 1: TITRE -->
+<div class="slide">
+    <h1>BESTIAIRE</h1>
+    <p class="tagline">Écorces & Échos</p>
+    <h3>Le Roguelite Deckbuilding où Chaque Cicatrice Raconte une Histoire</h3>
+    <div class="stats-grid" style="max-width: 600px;">
+        <div class="stat-card">
+            <div class="stat-number">100+</div>
+            <div class="stat-label">Créatures</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">20min</div>
+            <div class="stat-label">Par Run</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">∞</div>
+            <div class="stat-label">Rejouabilité</div>
+        </div>
+    </div>
+</div>
+
+<!-- SLIDE 2: PROBLÈME -->
+<div class="slide">
+    <h2>Le Problème du Marché</h2>
+    <div style="max-width: 800px; text-align: left; font-size: 1.3em; line-height: 1.8;">
+        <p>🎮 <strong>Les roguelites actuels sont trop longs</strong> : 45-90 minutes par run</p>
+        <p style="margin-top: 20px;">♻️ <strong>Mécaniques recyclées</strong> : Toujours le même loop de soin/repos</p>
+        <p style="margin-top: 20px;">📱 <strong>Inadaptés au mobile</strong> : Sessions trop longues pour le casual</p>
+        <p style="margin-top: 20px;">🎯 <strong>Manque de tension</strong> : Les erreurs sont facilement réparables</p>
+    </div>
+    <h3 style="margin-top: 50px; color: #FF6B6B;">Les joueurs veulent du NOUVEAU</h3>
+</div>
+
+<!-- SLIDE 3: SOLUTION -->
+<div class="slide">
+    <h2>Notre Solution Révolutionnaire</h2>
+    <h3 style="color: #FFD700; margin-bottom: 40px;">ATTRITION PERMANENTE</h3>
+    <ul class="feature-list">
+        <li>Pas de soin, pas de repos - Chaque dégât est définitif</li>
+        <li>Runs courtes mais intenses (15-30 minutes)</li>
+        <li>Chaque décision compte vraiment</li>
+        <li>Tension constante du début à la fin</li>
+        <li>Parfait pour mobile et sessions courtes</li>
+    </ul>
+    <div class="highlight" style="font-size: 1.4em; margin-top: 40px;">
+        "Dark Souls meets Slay the Spire"
+    </div>
+</div>
+
+<!-- SLIDE 4: MARCHÉ -->
+<div class="slide">
+    <h2>Opportunité de Marché</h2>
+    <div class="stats-grid">
+        <div class="stat-card">
+            <div class="stat-number">$2.5B</div>
+            <div class="stat-label">Marché Roguelite 2024</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">+35%</div>
+            <div class="stat-label">Croissance Annuelle</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">150M</div>
+            <div class="stat-label">Joueurs Actifs</div>
+        </div>
+    </div>
+    <h3 style="margin-top: 40px;">Succès Récents</h3>
+    <p style="font-size: 1.2em;">
+        <span class="highlight">Slay the Spire: 3M+ copies</span>
+        <span class="highlight">Wildfrost: 500k+ en 6 mois</span>
+        <span class="highlight">Inscryption: 2M+ copies</span>
+    </p>
+</div>
+
+<!-- SLIDE 5: DIFFÉRENCIATEURS -->
+<div class="slide">
+    <h2>Nos Avantages Compétitifs</h2>
+    <table class="comparison-table">
+        <tr>
+            <th>Caractéristique</th>
+            <th>Bestiaire</th>
+            <th>Concurrents</th>
+        </tr>
+        <tr>
+            <td>Durée de run</td>
+            <td style="color: #4CAF50;">15-30 min</td>
+            <td>45-90 min</td>
+        </tr>
+        <tr>
+            <td>Attrition</td>
+            <td style="color: #4CAF50;">Permanente</td>
+            <td>Réparable</td>
+        </tr>
+        <tr>
+            <td>Mobile-ready</td>
+            <td style="color: #4CAF50;">✓ Natif</td>
+            <td>✗ Adapté</td>
+        </tr>
+        <tr>
+            <td>Méta-progression</td>
+            <td style="color: #4CAF50;">Élégante</td>
+            <td>Power creep</td>
+        </tr>
+        <tr>
+            <td>Direction artistique</td>
+            <td style="color: #4CAF50;">Unique</td>
+            <td>Générique</td>
+        </tr>
+    </table>
+</div>
+
+<!-- SLIDE 6: MODÈLE ÉCONOMIQUE -->
+<div class="slide">
+    <h2>Modèle Économique</h2>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px; max-width: 1000px;">
+        <div>
+            <h3>Phase 1: Lancement PC</h3>
+            <p class="highlight">14.99€</p>
+            <ul style="list-style: none; font-size: 1.2em; line-height: 1.8; margin-top: 20px;">
+                <li>✅ Steam & Epic Games</li>
+                <li>✅ Early Access 3 mois</li>
+                <li>✅ DLC gratuits réguliers</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Phase 2: Mobile</h3>
+            <p class="highlight">7.99€</p>
+            <ul style="list-style: none; font-size: 1.2em; line-height: 1.8; margin-top: 20px;">
+                <li>✅ iOS & Android</li>
+                <li>✅ Cross-save</li>
+                <li>✅ Version d'essai gratuite</li>
+            </ul>
+        </div>
+    </div>
+    <h3 style="margin-top: 50px;">Projections Year 1</h3>
+    <div class="stats-grid" style="max-width: 600px;">
+        <div class="stat-card">
+            <div class="stat-number">50k</div>
+            <div class="stat-label">Ventes PC</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">100k</div>
+            <div class="stat-label">Ventes Mobile</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">1.5M€</div>
+            <div class="stat-label">Revenus</div>
+        </div>
+    </div>
+</div>
+
+<!-- SLIDE 7: ROADMAP -->
+<div class="slide">
+    <h2>Roadmap Développement</h2>
+    <div class="roadmap">
+        <div class="roadmap-item">
+            <h4>Q1 2025</h4>
+            <p>Beta fermée</p>
+            <p>100 testeurs</p>
+            <p>Polish & Balance</p>
+        </div>
+        <div class="roadmap-item">
+            <h4>Q2 2025</h4>
+            <p>Early Access Steam</p>
+            <p>Marketing influenceurs</p>
+            <p>Feedback communauté</p>
+        </div>
+        <div class="roadmap-item">
+            <h4>Q3 2025</h4>
+            <p>Version 1.0</p>
+            <p>Lancement Mobile</p>
+            <p>Premier DLC gratuit</p>
+        </div>
+        <div class="roadmap-item">
+            <h4>Q4 2025</h4>
+            <p>Version Switch</p>
+            <p>Mode Multijoueur</p>
+            <p>Éditeur de contenu</p>
+        </div>
+    </div>
+</div>
+
+<!-- SLIDE 8: ÉQUIPE -->
+<div class="slide">
+    <h2>Pourquoi Nous Réussirons</h2>
+    <div style="max-width: 800px; text-align: left; font-size: 1.3em; line-height: 2;">
+        <p>🏆 <strong>Expertise technique</strong> : Stack moderne, architecture solide</p>
+        <p>🎮 <strong>Vision unique</strong> : Mécanique jamais vue sur le marché</p>
+        <p>💡 <strong>Agilité</strong> : Équipe lean, décisions rapides</p>
+        <p>🌍 <strong>Multi-plateforme</strong> : PC, Mobile, Console ready</p>
+        <p>🌐 <strong>International</strong> : 10 langues au lancement</p>
+    </div>
+</div>
+
+<!-- SLIDE 9: INVESTISSEMENT -->
+<div class="slide">
+    <h2>Opportunité d'Investissement</h2>
+    <h3 style="color: #FFD700;">Recherche: 250,000€</h3>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; max-width: 800px; margin-top: 40px;">
+        <div>
+            <h4 style="color: #87CEEB;">Utilisation des fonds</h4>
+            <ul style="list-style: none; font-size: 1.2em; line-height: 1.8;">
+                <li>40% - Développement</li>
+                <li>30% - Marketing</li>
+                <li>20% - Art & Audio</li>
+                <li>10% - Opérations</li>
+            </ul>
+        </div>
+        <div>
+            <h4 style="color: #87CEEB;">ROI Attendu</h4>
+            <ul style="list-style: none; font-size: 1.2em; line-height: 1.8;">
+                <li>Break-even: Mois 6</li>
+                <li>ROI 3x: Year 1</li>
+                <li>ROI 10x: Year 3</li>
+                <li>Exit potentiel: 5-10M€</li>
+            </ul>
+        </div>
+    </div>
+    <a href="#" class="cta">INVESTIR MAINTENANT</a>
+</div>
+
+<!-- SLIDE 10: CONTACT -->
+<div class="slide">
+    <h1>BESTIAIRE</h1>
+    <p class="tagline">Où Chaque Cicatrice Raconte une Histoire</p>
+    <div style="margin-top: 50px; font-size: 1.3em;">
+        <p>📧 contact@bestiaire-game.com</p>
+        <p style="margin-top: 20px;">🌐 www.bestiaire-game.com</p>
+        <p style="margin-top: 20px;">📱 Discord: discord.gg/bestiaire</p>
+    </div>
+    <a href="#" class="cta">DEMANDER UNE DÉMO</a>
+</div>
+
+</body>
+</html>
+"""
+
+# Enregistrer le pitch deck
+def save_pitch_deck():
+    """Sauvegarde le pitch deck en HTML"""
+    with open("pitch_deck_bestiaire.html", "w", encoding="utf-8") as f:
+        f.write(PITCH_DECK)
+    print("✅ Pitch deck sauvegardé: pitch_deck_bestiaire.html")
+
+if __name__ == "__main__":
+    save_pitch_deck()

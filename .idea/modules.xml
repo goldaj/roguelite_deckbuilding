@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/roguelite_deckbuilding.iml" filepath="$PROJECT_DIR$/.idea/roguelite_deckbuilding.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/bestiaire.iml" filepath="$PROJECT_DIR$/.idea/bestiaire.iml" />
     </modules>
   </component>
 </project>

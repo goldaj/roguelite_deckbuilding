@@ -1,0 +1,18 @@
+# PROMPTS MIDJOURNEY POUR BESTIAIRE
+# Copier-coller chaque prompt dans Midjourney
+
+## Grenouille Épineuse (forest_spine_frog)
+```
+fantasy frog with magical aura, fantasy creature, frog, watercolor ink wash art style, deep greens, moss, emerald, dew drops color palette, humid, misty, organic atmosphere, centered creature portrait, white background, trading card game illustration, ink and wash technique, strong silhouette, --ar 3:4 --style raw --v 6
+```
+
+## Mygale d'Azur (forest_azure_spider)
+```
+fantasy spider with magical aura, fantasy creature, spider, watercolor ink wash art style, deep greens, moss, emerald, dew drops color palette, humid, misty, organic atmosphere, centered creature portrait, white background, trading card game illustration, ink and wash technique, strong silhouette, --ar 3:4 --style raw --v 6
+```
+
+## Fennec Solaire (dunes_solar_fennec)
+```
+fantasy fennec fox with magical aura, fantasy creature, fennec fox, bold ink strokes art style, ochre, crimson, burnt orange, sand color palette, hot, dry, shimmering heat atmosphere, centered creature portrait, white background, trading card game illustration, ink and wash technique, strong silhouette, --ar 3:4 --style raw --v 6
+```
+

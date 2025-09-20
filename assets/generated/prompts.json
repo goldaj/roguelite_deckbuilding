@@ -1,0 +1,23 @@
+[
+  {
+    "id": "forest_spine_frog",
+    "name": "Grenouille Épineuse",
+    "midjourney": "fantasy frog with magical aura, fantasy creature, frog, watercolor ink wash art style, deep greens, moss, emerald, dew drops color palette, humid, misty, organic atmosphere, centered creature portrait, white background, trading card game illustration, ink and wash technique, strong silhouette, --ar 3:4 --style raw --v 6",
+    "dalle": "A frog creature called 'Grenouille Épineuse' for a card game, illustrated in watercolor ink wash style with deep greens, moss, emerald, dew drops colors. The creature should have fantasy frog with magical aura. humid, misty, organic atmosphere. White background, no text, centered composition. Style: ink wash and watercolor, reminiscent of traditional Asian art mixed with modern fantasy card game aesthetics.",
+    "negative": "\n        text, typography, letters, numbers, watermark, signature,\n        frame, border, multiple creatures, human, anime character,\n        3D render, photograph, realistic, blurry, low quality,\n        oversaturated, busy background\n        "
+  },
+  {
+    "id": "forest_azure_spider",
+    "name": "Mygale d'Azur",
+    "midjourney": "fantasy spider with magical aura, fantasy creature, spider, watercolor ink wash art style, deep greens, moss, emerald, dew drops color palette, humid, misty, organic atmosphere, centered creature portrait, white background, trading card game illustration, ink and wash technique, strong silhouette, --ar 3:4 --style raw --v 6",
+    "dalle": "A spider creature called 'Mygale d'Azur' for a card game, illustrated in watercolor ink wash style with deep greens, moss, emerald, dew drops colors. The creature should have fantasy spider with magical aura. humid, misty, organic atmosphere. White background, no text, centered composition. Style: ink wash and watercolor, reminiscent of traditional Asian art mixed with modern fantasy card game aesthetics.",
+    "negative": "\n        text, typography, letters, numbers, watermark, signature,\n        frame, border, multiple creatures, human, anime character,\n        3D render, photograph, realistic, blurry, low quality,\n        oversaturated, busy background\n        "
+  },
+  {
+    "id": "dunes_solar_fennec",
+    "name": "Fennec Solaire",
+    "midjourney": "fantasy fennec fox with magical aura, fantasy creature, fennec fox, bold ink strokes art style, ochre, crimson, burnt orange, sand color palette, hot, dry, shimmering heat atmosphere, centered creature portrait, white background, trading card game illustration, ink and wash technique, strong silhouette, --ar 3:4 --style raw --v 6",
+    "dalle": "A fennec fox creature called 'Fennec Solaire' for a card game, illustrated in bold ink strokes style with ochre, crimson, burnt orange, sand colors. The creature should have fantasy fennec fox with magical aura. hot, dry, shimmering heat atmosphere. White background, no text, centered composition. Style: ink wash and watercolor, reminiscent of traditional Asian art mixed with modern fantasy card game aesthetics.",
+    "negative": "\n        text, typography, letters, numbers, watermark, signature,\n        frame, border, multiple creatures, human, anime character,\n        3D render, photograph, realistic, blurry, low quality,\n        oversaturated, busy background\n        "
+  }
+]
